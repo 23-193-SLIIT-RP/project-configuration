@@ -1,0 +1,10 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: samplez
+spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        image: sharedregistry23.azurecr.io/application-01:dev

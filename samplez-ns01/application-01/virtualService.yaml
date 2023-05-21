@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: samplez
+spec:
+  http:
+  - match:
+    - uri:
+        prefix: /application-01
+    route:
+    - destination:
+        host: application-01.samplez-ns01.svc.cluster.local
+        port:
+          number: 8080
