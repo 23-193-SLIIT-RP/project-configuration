@@ -6,7 +6,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - default/samplez-gateway
+  - default/main-gateway
   http:
   - match:
     - uri:

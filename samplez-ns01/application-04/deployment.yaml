@@ -1,0 +1,55 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: sample-application-04
+spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        image: isurupathumherath/lolc-fusionx-java-project:2.0.0
+            
+            
+            
+            
+            
+            
+            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            
+            
+            
+            
+            
+            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+    
+          
+         
+          
+      
+
+       
+          
+          
+          
+          

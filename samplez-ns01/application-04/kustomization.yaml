@@ -1,0 +1,11 @@
+bases:
+- ../base
+patches:
+  - deployment.yaml
+  - virtualService.yaml
+patchesJson6902:
+  - target:
+      name: sample-application-04
+    path: patch.yaml
+commonLabels:
+  app: sample-application-04
