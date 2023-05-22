@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: sample-deployment
+  name: sample-application-01
+  labels:
+      app: sample-application-01
+spec:
+  selector:
+    app: sample-application-01
+  ports:
+  - port: 8080
+    name: http
+  type: ClusterIP

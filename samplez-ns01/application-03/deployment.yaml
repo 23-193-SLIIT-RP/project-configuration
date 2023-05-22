@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: sample-deployment
+  name: sample-application-01
+  labels:
+    app: sample-application-01
+spec:
+  selector:
+    matchLabels:
+      app: sample-application-01
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sample-application-01
+        version: v1
+    spec:
+      containers:
+      - name: app
+        image: isurupathumherath/lolc-fusionx-java-project:2.0.0
+        ports:
+        - containerPort: 8080
